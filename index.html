@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <form>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Payment form example</h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                    <fieldset>
+                        <div class="form-row">
+                            
+                            <div class="form-group col-5">
+                                <label for="card"><strong>Card #</strong></label>
+                                <input type="number" class="form-control" maxlength="16" id="card" placeholder="XXXXXXXXXXXXX" required>
+                            </div>
+                            <div class="form-group col-2">
+                                <label for="cvc"><strong>CVC #</strong></label>
+                                <input type="password" class="form-control" id="cvc" placeholder="0000" required>
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="amount"><strong>Amount</strong></label>
+                                <div class="amount d-flex">
+                                    <span>$</span>
+                                    <input type="number" class="form-control" id="amount" placeholder="Amount" aria-describedby="inputGroupPrepend2" required>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+                    <div class="cajon-final d-flex">
+                        <div class="cizq">
+                            <fieldset>
+                                
+                                    <div class="form-group col pl-1">
+                                        <label for="fn"><strong>First Name</strong></label>
+                                        <input type="text" class="form-control" id="fn" required>
+                                    </div>
+                                    <div class="form-group col pl-1">
+                                        <label for="validationServer03">City</label>
+                                        <input type="text" class="form-control" id="validationServer03" required>
+                                    </div>
+                                    <fieldset class="form-group">
+                                        
+                                        <legend class="col-form-label"><strong>We accept:</strong></legend>
+                                        <div class="card bg-secondary" style="max-width: 18rem;">
+                                            <div class="card-body ">
+                                                <div class="col">
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                              <label class="form-check-label" for="gridRadios1">
+                                                <i class="fa-brands fa-cc-mastercard"></i>
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                              <label class="form-check-label" for="gridRadios2">
+                                                <i class="fa-brands fa-cc-visa"></i>
+                                              </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    <i class="fa-brands fa-cc-diners-club"></i>
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option2">
+                                                <label class="form-check-label" for="gridRadios2">
+                                                    <i class="fa-brands fa-cc-paypal"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    </fieldset>
+                                
+                            </fieldset>
+                        </div>
+                        <div class="cder">
+                            <fieldset>
+                                
+                                    <div class="form-group col ml-2 pr-1">
+                                        <label for="ln"><strong>Last name</strong></label>
+                                        <input type="text" class="form-control" id="ln" required>
+                                    </div>
+                                <div class="form-row d-flex justify-content-between">
+                                    <div class="form-group col mr-4 ml-4">
+                                        <label for="inputState"><strong>State</strong></label>
+                                        <select id="inputState" class="form-control" required>
+                                          <option selected>Pick a state</option>
+                                          <option>A</option>
+                                          <option>B</option>
+                                          <option>C</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group col">
+                                        <label for="inputZip"><strong> Postal Code</strong></label>
+                                        <input type="number" class="form-control" id="inputZip" required>
+                                      </div>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="msg" class="col-form-label"><strong>Message</strong></label>
+                                        <textarea class="form-control" id="msg" style="height: 100px"></textarea>
+                                        <p style="color: rgb(190, 190, 190)";>Add any notes here</p>
+                                    </div>
+                                </div>
+                                
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary mr-2" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </div>
+        </form>
+        
+      
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>   
+    </body>
+</html>

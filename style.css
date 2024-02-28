@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #a77a7a!important;
+}
+form{
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px !important;
+}
+.card-body{
+    margin: auto;
+}
+.form-row{
+    justify-content: space-between;
+}
+.amount{
+    display: inline;
+}
+.cizq{
+    flex:1;
+}
+.cder{
+    flex:1;
+}
+.card-footer{
+    background-color:#f7f7f7 !important;
+}
